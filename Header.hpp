@@ -21,6 +21,6 @@ public:
 			delete m_pData;
 		}
 		
-		cout << "destructor ~memGuardClass()" << endl;
+		cout << "destructor ~memGuardClass() fot this: " << this << endl;
 	}
 };
