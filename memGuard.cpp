@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "Header.hpp"
+#include "memGuard.hpp"
 #include "A.h"
 
 int main()
@@ -11,10 +11,10 @@ int main()
 	try
 	{
 		A *pArr = new A[5];
-		memGuardClass <A> objArr(pArr, true);
+		memGuard <A> objArr(pArr, true);
 
 		int *pIntArr = new int[12];
-		memGuardClass <int> iArr(pIntArr, true);
+		memGuard <int> iArr(pIntArr, true);
 
 		if (true)
 			throw(1);
