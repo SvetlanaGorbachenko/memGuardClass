@@ -12,8 +12,6 @@ public:
 	}
 	~memGuardClass()
 	{
-		cout << "destructor ~memGuardClass()" << endl;
-
 		if (m_bArray != false)
 		{
 			delete[] m_pData;
@@ -22,5 +20,7 @@ public:
 		{
 			delete m_pData;
 		}
+		
+		cout << "destructor ~memGuardClass()" << endl;
 	}
 };
